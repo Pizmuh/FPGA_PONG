@@ -1,0 +1,71 @@
+# Reading pref.tcl
+# do MKRVIDOR4000_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/qrartus/201/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/simon/OneDrive/Namizje/school/4.\ letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija\ -\ Copy/FPGABlinkLED/ip/SYSTEM_PLL {C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL/SYSTEM_PLL.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:16:03 on Jan 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL" C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL/SYSTEM_PLL.v 
+# -- Compiling module SYSTEM_PLL
+# 
+# Top level modules:
+# 	SYSTEM_PLL
+# End time: 22:16:03 on Jan 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/simon/OneDrive/Namizje/school/4.\ letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija\ -\ Copy/FPGABlinkLED/projects/MKRVIDOR4000_template {C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/projects/MKRVIDOR4000_template/MKRVIDOR4000_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:16:04 on Jan 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/projects/MKRVIDOR4000_template" C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/projects/MKRVIDOR4000_template/MKRVIDOR4000_top.v 
+# -- Compiling module MKRVIDOR4000_top
+# ** Error: (vlog-13069) C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/projects/MKRVIDOR4000_template/MKRVIDOR4000_top.v(172): near ")": syntax error, unexpected ')', expecting .* or '.'.
+# End time: 22:16:04 on Jan 10,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/qrartus/201/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./MKRVIDOR4000_run_msim_rtl_verilog.do line 9
+# C:/qrartus/201/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Users/simon/OneDrive/Namizje/school/4.\ letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija\..."
+vsim rtl_work.SYSTEM_PLL
+# vsim rtl_work.SYSTEM_PLL 
+# Start time: 22:16:11 on Jan 10,2023
+# Loading sv_std.std
+# Loading rtl_work.SYSTEM_PLL
+# ** Error: (vsim-3033) Instantiation of 'altpll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SYSTEM_PLL File: C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL/SYSTEM_PLL.v Line: 83
+#         Searched libraries:
+#             C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/projects/MKRVIDOR4000_template/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 22:16:11 on Jan 10,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.SYSTEM_PLL
+# vsim work.SYSTEM_PLL 
+# Start time: 22:16:23 on Jan 10,2023
+# Loading sv_std.std
+# Loading work.SYSTEM_PLL
+# ** Error: (vsim-3033) Instantiation of 'altpll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SYSTEM_PLL File: C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL/SYSTEM_PLL.v Line: 83
+#         Searched libraries:
+#             C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/projects/MKRVIDOR4000_template/simulation/modelsim/rtl_work
+# Error loading design
+vsim work.SYSTEM_PLL
+# End time: 22:16:24 on Jan 10,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# vsim work.SYSTEM_PLL 
+# Start time: 22:16:24 on Jan 10,2023
+# Loading sv_std.std
+# Loading work.SYSTEM_PLL
+# ** Error: (vsim-3033) Instantiation of 'altpll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /SYSTEM_PLL File: C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL/SYSTEM_PLL.v Line: 83
+#         Searched libraries:
+#             C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/projects/MKRVIDOR4000_template/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 22:16:24 on Jan 10,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

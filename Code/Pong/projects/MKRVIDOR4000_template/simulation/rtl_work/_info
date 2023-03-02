@@ -1,0 +1,38 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/projects/MKRVIDOR4000_template/simulation/modelsim
+vSYSTEM_PLL
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1673385363
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 FocBd>A09nb>_R8:60zmI1
+IJZ=EHXojQ0J<g0b[Ra^na0
+S1
+R0
+w1670567578
+8C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL/SYSTEM_PLL.v
+FC:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL/SYSTEM_PLL.v
+!i122 0
+L0 40 156
+OV;L;2020.1;71
+31
+!s108 1673385363.000000
+!s107 C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL/SYSTEM_PLL.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL|C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL/SYSTEM_PLL.v|
+!i113 1
+o-sv -work work
+!s92 -sv -work work {+incdir+C:/Users/simon/OneDrive/Namizje/school/4. letnik/Matura/FPGA/sheme/quartzus_pocitnice_v_decembru/VGA_prenizka_resolucija - Copy/FPGABlinkLED/ip/SYSTEM_PLL}
+tCvgOpt 0
+n@s@y@s@t@e@m_@p@l@l

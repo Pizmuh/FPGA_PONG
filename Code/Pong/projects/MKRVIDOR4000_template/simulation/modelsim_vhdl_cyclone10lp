@@ -1,0 +1,123 @@
+Info: Changing the current directory to output directory C:/Users/Simon Lipovsek/OneDrive/Namizje/school/4. letnik/Matura/FPGA/Raziskovalna_ za_frekvenco_igrice/FPGABlinkLED/projects/MKRVIDOR4000_template/simulation ..
+Info: Using Path C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem that was set in EDA Simulation Library Compiler Options
+Info: Generating commands to compile library cyclone10lp ...
+Info: Executing command file containing library compilation commands
+Info: Reading pref.tcl
+Info: # 2020.1
+Info: # do temp_simlib_comp.tmp
+Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Info: # Start time: 12:41:44 on Mar 01,2023
+Info: # vcom -work cyclone10lp -93 c:/intelfpga_lite/20.1/quartus/eda/sim_lib/cyclone10lp_atoms.vhd 
+Info: # -- Loading package STANDARD
+Info: # -- Loading package TEXTIO
+Info: # -- Loading package std_logic_1164
+Info: # -- Loading package VITAL_Timing
+Info: # -- Loading package VITAL_Primitives
+Info: # -- Compiling package cyclone10lp_atom_pack
+Info: # -- Compiling package body cyclone10lp_atom_pack
+Info: # -- Loading package cyclone10lp_atom_pack
+Info: # -- Compiling package cyclone10lp_pllpack
+Info: # -- Compiling package body cyclone10lp_pllpack
+Info: # -- Loading package cyclone10lp_pllpack
+Info: # -- Loading package cyclone10lp_atom_pack
+Info: # -- Compiling entity cyclone10lp_dffe
+Info: # -- Compiling architecture behave of cyclone10lp_dffe
+Info: # -- Compiling entity cyclone10lp_mux21
+Info: # -- Compiling architecture AltVITAL of cyclone10lp_mux21
+Info: # -- Compiling entity cyclone10lp_mux41
+Info: # -- Compiling architecture AltVITAL of cyclone10lp_mux41
+Info: # -- Compiling entity cyclone10lp_and1
+Info: # -- Compiling architecture AltVITAL of cyclone10lp_and1
+Info: # -- Compiling entity cyclone10lp_lcell_comb
+Info: # -- Compiling architecture vital_lcell_comb of cyclone10lp_lcell_comb
+Info: # -- Compiling entity cyclone10lp_routing_wire
+Warning: # ** Warning: c:/intelfpga_lite/20.1/quartus/eda/sim_lib/cyclone10lp_atoms.vhd(1667): (vcom-1288) VITAL timing generic "tpd_datainglitch_dataout" port specification "datainglitch" does not denote a port.
+Info: # (1076.4 section 4.3.2.1.3)
+Info: # -- Compiling architecture behave of cyclone10lp_routing_wire
+Info: # -- Loading package std_logic_arith
+Info: # -- Loading package STD_LOGIC_UNSIGNED
+Info: # -- Compiling entity cyclone10lp_mn_cntr
+Info: # -- Compiling architecture behave of cyclone10lp_mn_cntr
+Info: # -- Compiling entity cyclone10lp_scale_cntr
+Info: # -- Compiling architecture behave of cyclone10lp_scale_cntr
+Info: # -- Compiling entity cyclone10lp_pll_reg
+Info: # -- Compiling architecture behave of cyclone10lp_pll_reg
+Info: # -- Loading package cyclone10lp_pllpack
+Info: # -- Loading entity cyclone10lp_mn_cntr
+Info: # -- Loading entity cyclone10lp_scale_cntr
+Info: # -- Loading entity cyclone10lp_dffe
+Info: # -- Loading entity cyclone10lp_pll_reg
+Info: # -- Compiling entity cyclone10lp_pll
+Info: # -- Compiling architecture vital_pll of cyclone10lp_pll
+Info: # -- Loading entity cyclone10lp_and1
+Info: # -- Compiling entity cyclone10lp_ff
+Info: # -- Compiling architecture vital_lcell_ff of cyclone10lp_ff
+Info: # -- Compiling entity cyclone10lp_ram_register
+Info: # -- Compiling architecture reg_arch of cyclone10lp_ram_register
+Info: # -- Compiling entity cyclone10lp_ram_pulse_generator
+Info: # -- Compiling architecture pgen_arch of cyclone10lp_ram_pulse_generator
+Info: # -- Loading entity cyclone10lp_ram_register
+Info: # -- Loading entity cyclone10lp_ram_pulse_generator
+Info: # -- Compiling entity cyclone10lp_ram_block
+Info: # -- Compiling architecture block_arch of cyclone10lp_ram_block
+Info: # -- Compiling entity cyclone10lp_mac_data_reg
+Info: # -- Compiling architecture vital_cyclone10lp_mac_data_reg of cyclone10lp_mac_data_reg
+Info: # -- Compiling entity cyclone10lp_mac_sign_reg
+Info: # -- Compiling architecture cyclone10lp_mac_sign_reg of cyclone10lp_mac_sign_reg
+Info: # -- Compiling entity cyclone10lp_mac_mult_internal
+Info: # -- Compiling architecture vital_cyclone10lp_mac_mult_internal of cyclone10lp_mac_mult_internal
+Info: # -- Loading entity cyclone10lp_mac_data_reg
+Info: # -- Loading entity cyclone10lp_mac_sign_reg
+Info: # -- Loading entity cyclone10lp_mac_mult_internal
+Info: # -- Compiling entity cyclone10lp_mac_mult
+Info: # -- Compiling architecture vital_cyclone10lp_mac_mult of cyclone10lp_mac_mult
+Info: # -- Compiling entity cyclone10lp_mac_out
+Info: # -- Compiling architecture vital_cyclone10lp_mac_out of cyclone10lp_mac_out
+Info: # -- Compiling entity cyclone10lp_io_ibuf
+Info: # -- Compiling architecture arch of cyclone10lp_io_ibuf
+Info: # -- Compiling entity cyclone10lp_io_obuf
+Info: # -- Compiling architecture arch of cyclone10lp_io_obuf
+Info: # -- Compiling entity cyclone10lp_ddio_oe
+Info: # -- Compiling architecture arch of cyclone10lp_ddio_oe
+Info: # -- Compiling entity cyclone10lp_latch
+Info: # -- Compiling architecture vital_latch of cyclone10lp_latch
+Info: # -- Compiling entity cyclone10lp_ddio_out
+Info: # -- Compiling architecture arch of cyclone10lp_ddio_out
+Info: # -- Compiling entity cyclone10lp_pseudo_diff_out
+Info: # -- Compiling architecture arch of cyclone10lp_pseudo_diff_out
+Info: # -- Compiling entity cyclone10lp_io_pad
+Info: # -- Compiling architecture arch of cyclone10lp_io_pad
+Info: # -- Compiling entity cyclone10lp_asmiblock
+Info: # -- Compiling architecture behavior of cyclone10lp_asmiblock
+Info: # -- Compiling entity cyclone10lp_ena_reg
+Info: # -- Compiling architecture behave of cyclone10lp_ena_reg
+Info: # -- Loading entity cyclone10lp_ena_reg
+Info: # -- Compiling entity cyclone10lp_clkctrl
+Info: # -- Compiling architecture vital_clkctrl of cyclone10lp_clkctrl
+Info: # -- Compiling entity cyclone10lp_rublock
+Info: # -- Compiling architecture architecture_rublock of cyclone10lp_rublock
+Info: # -- Compiling entity cyclone10lp_apfcontroller
+Info: # -- Compiling architecture architecture_apfcontroller of cyclone10lp_apfcontroller
+Info: # -- Compiling entity cyclone10lp_termination
+Info: # -- Compiling architecture cyclone10lp_termination_arch of cyclone10lp_termination
+Info: # -- Compiling entity cyclone10lp_jtag
+Info: # -- Compiling architecture architecture_jtag of cyclone10lp_jtag
+Info: # -- Compiling entity cyclone10lp_crcblock
+Info: # -- Compiling architecture architecture_crcblock of cyclone10lp_crcblock
+Info: # -- Compiling entity cyclone10lp_oscillator
+Info: # -- Compiling architecture architecture_oscillator of cyclone10lp_oscillator
+Info: # End time: 12:41:45 on Mar 01,2023, Elapsed time: 0:00:01
+Info: # Errors: 0, Warnings: 1
+Info: # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Info: # Start time: 12:41:45 on Mar 01,2023
+Info: # vcom -work cyclone10lp -93 c:/intelfpga_lite/20.1/quartus/eda/sim_lib/cyclone10lp_components.vhd 
+Info: # -- Loading package STANDARD
+Info: # -- Loading package TEXTIO
+Info: # -- Loading package std_logic_1164
+Info: # -- Loading package VITAL_Timing
+Info: # -- Loading package VITAL_Primitives
+Info: # -- Loading package cyclone10lp_atom_pack
+Info: # -- Compiling package cyclone10lp_components
+Info: # End time: 12:41:45 on Mar 01,2023, Elapsed time: 0:00:00
+Info: # Errors: 0, Warnings: 0
+Info: Successfully compiled the libraries
