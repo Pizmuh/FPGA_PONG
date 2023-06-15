@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 module game_object(
   input clock,
-  output [2:0] red, 
-  output [2:0] green, 
-  output [1:0] blue,
+  output [0:0] red, 
+  output [0:0] green, 
+  output [0:0] blue,
   input reg [9:0] hcount, 
   input reg [9:0] vcount,
   input enable,
@@ -24,16 +24,16 @@ begin
   begin
 	  if ( (60 < hcount && hcount < 70) &&  (vcount > count) && (vcount < 100 + count ) ) //Kvadratek
     begin
-      green <= 3'b111;
-      blue <= 2'b11; 
-      red <= 3'b111;
+      green <= 1'b1;
+      blue <= 1'b1; 
+      red <= 1'b1;
     end
 	 
     else 
     begin
-      green <= 3'b000;
-      blue <= 2'b00; 
-      red <= 3'b000;
+      green <= 1'b0;
+      blue <= 1'b0; 
+      red <= 1'b0;
     end
   end 
 end 
@@ -62,7 +62,7 @@ begin
 	 begin
 		if ((inp1 == 0) && (count < 380)) // 480
 		begin
-			count <= count + 3 ;
+			count <= count + 3;
 		end
 		else if ((inp2 == 0) && !(count == 0))
 		begin
@@ -72,7 +72,7 @@ begin
 	
 	if (ppsy) begin
 		county = county + 1 ;
-        //… things to do once per second 1 = 50 000 000 …
+        //… things to do nce per second 1 = 50 000 000 …
     end
 	 
 end

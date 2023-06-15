@@ -4,8 +4,8 @@ module menu(
   output [2:0] red, 
   output [2:0] green, 
   output [1:0] blue,
-  input reg [9:0] hcount, 
-  input reg [9:0] vcount,
+  input reg [11:0]  hcount, 
+  input reg  [11:0] vcount,
   input enable,
   output layer,
   inout menu,
@@ -17,7 +17,7 @@ assign layer = 1;
 
 
 
-/// Slikica na zaslonu v bistvu ozadje
+/// Slikmica na zaslonu v bistvu ozadje
 
 always @ (posedge clock)
 begin
@@ -43,6 +43,9 @@ begin
 		red <= 3'b000;
 	end
 end 
+
+
+
 
 
 

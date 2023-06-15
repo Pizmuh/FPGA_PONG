@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 module VGA_GAME(
   input clock,
-  output reg [2:0 ] red_F, 
-  output reg [2:0 ] green_F, 
-  output reg [1:0 ] blue_F,
+  output reg [0:0 ] red_F, 
+  output reg [0:0 ] green_F, 
+  output reg [0:0 ] blue_F,
   output reg hsync, 
   output reg vsync,
   input inp1,
@@ -42,6 +42,10 @@ reg R6 = 0;
 reg G6 = 0;
 reg B6 = 0;
 
+reg R7 = 0;
+reg G7 = 0;
+reg B7 = 0;
+
 reg smerx = 0;
 reg smery = 0;
 reg menu = 0;
@@ -55,26 +59,23 @@ reg L6;
 
 reg maks = 5; ///maksimalen score
 
-reg [9:0] score1;
-reg [9:0] score2;
+reg [3:0] score1;
+reg [3:0] score2;
 
-reg [9:0] hcount = 0;
-reg [9:0] vcount = 0;
+reg [11:0] hcount = 0;
+reg [11:0] vcount = 0;
 reg [1:0] counter = 0;
-
 reg enable;
 
+
+
+
 reg COLOUR_DATA = 0;
-
-
-
-
-
 
 // sinhronizacija VGA zaslona
 always @ (posedge clock)
 begin
-  if (counter == 3)
+  if (counter == 2)
   begin
     counter <= 1'b0;
     enable <= 1'b1;
@@ -90,28 +91,46 @@ always @(posedge clock)
 begin
   if (enable == 1)
   begin
-    if(hcount == 799)
+    if(hcount == 1055)
     begin
       hcount <= 0;
-      if(vcount == 524)
-        vcount <= 0;
+		if(vcount == 627)
+		  vcount <= 0;
       else 
         vcount <= vcount+1'b1;
     end
     else
       hcount <= hcount+1'b1;
 
-  if (vcount >= 490 && vcount < 492) 
+  if (vcount >= 601 && vcount < 605) 
     vsync <= 1'b0;
   else
     vsync <= 1'b1;
 
-  if (hcount >= 656 && hcount < 752) 
+  if (hcount >= 840 && hcount < 968) 
     hsync <= 1'b0;
   else
     hsync <= 1'b1;
   end
 end
+
+
+//timer
+reg [23:0] steti = 0;
+reg [7:0] timer = 1;
+always @ (posedge clock)
+begin
+  if (steti == 0)
+  begin
+    steti <= 1'b1;
+    timer <= timer + 1;
+  end
+  else
+  begin
+    steti <= steti + 1'b1;
+  end
+end
+
 
 
 // upravljanje layerjev
@@ -126,19 +145,18 @@ begin
 
 	
 	if (score1 > 5)
-  begin	
-		red_F <= R7;
-      blue_F <= B7; 
-      green_F <= G7;
-	
+  begin
+		
+	 red_F <= R5;
+      blue_F <= B5; 
+      green_F <= G5;
+ 
   end
   else if (score2 > 5)
   begin
-	 
-		red_F <= R7;
-      blue_F <= B7; 
-      green_F <= G7;
-	
+	 red_F <= R1;
+    blue_F <= B1; 
+    green_F <= G1;
 	end
   else
   begin
@@ -173,12 +191,17 @@ begin
 		 green_F <= G6;
 		 blue_F <= B6;
     end
-	 
+	/* else if ((R7 != 0) || (G7 != 0) || (B7 != 0))
+    begin
+       red_F <= R7;
+		green_F <= G7;
+		blue_F <= B7;
+    end */
 	 else
 	 begin
-		red_F <= 3'b000;
-      blue_F <= 2'b00; 
-      green_F <= 3'b000;
+		red_F <= 1'b0;
+      blue_F <= 1'b0; 
+      green_F <= 1'b0;
   end 
  end
 end 
@@ -248,8 +271,7 @@ background background_inst
 	.enable(enable),
 	.layer(L2)
 	);
-
-background_color background_color_inst
+malderbrot malderbrot_inst
 	(
 	.clock(clock),
 	.red(R7),
@@ -258,7 +280,8 @@ background_color background_color_inst
 	.hcount(hcount),
 	.vcount(vcount),
 	.enable(enable),
-	.layer(L2)
+	.timer(timer)
+	
 	);
 	
  

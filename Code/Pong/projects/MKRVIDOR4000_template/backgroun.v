@@ -4,15 +4,14 @@ module background(
   output [2:0] red, 
   output [2:0] green, 
   output [1:0] blue,
-  input reg [9:0] hcount, 
-  input reg [9:0] vcount,
+  input reg [11:0]  hcount, 
+  input reg  [11:0] vcount,
   input enable,
   output layer
   
 );
 
 assign layer = 0;
-
 
 
 /// Slikica na zaslonu v bistvu ozadje

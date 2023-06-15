@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 module ball(
   input clock,
-  output [2:0] red, 
-  output [2:0] green, 
-  output [1:0] blue,
+  output [0:0] red, 
+  output [0:0] green, 
+  output [0:0] blue,
   
   
   input reg [9:0] hcount, 
@@ -33,18 +33,19 @@ begin
   if (enable)
   begin
     
-	 if ((county < vcount && vcount < county + 15) && (countx < hcount && hcount < countx + 10))//Kvadratek
+	 //if ((county < vcount && vcount < county + 15) && (countx < hcount && hcount < countx + 10))//Kvadratek
+	 if ((hcount - countx-10)**2 + (vcount-county-10)**2 < 100)
     begin
-      green <= 3'b000 + smerx;
-      blue <= 2'b11 + smery; 
-      red <= 3'b111;
+      green <= 1'b1;
+      blue <= 1'b1;
+      red <= 1'b1;
     end
 	 
     else 
     begin
-      green <= 3'b000;
-      blue <= 2'b00; 
-      red <= 3'b000;
+      green <= 1'b0;
+      blue <= 1'b0; 
+      red <= 1'b0;
     end
   end 
 end 
